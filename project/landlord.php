@@ -74,6 +74,11 @@ ul li.checked::before {
 	margin-left: 52%;
 	
 }
+#respond{
+	position:absolute;
+	margin-top: 28%;
+	margin-left: 67%;
+}
 
 /* Style the close button */
 .close {
@@ -148,16 +153,17 @@ input {
 
 <ul id="myUL">
   <li>Hit the gym</li>
-  <li class="checked">Pay bills</li>
+  <li >Pay bills</li>
   <li>Meet George</li>
   <li>Buy eggs</li>
   <li>Read a book</li>
   <li>Organize office</li>
 </ul>
 
-<textarea id="maintananceIssues" rows="16" cols="70">
-	Maintanance issues
+<textarea id="maintananceIssues" rows="16" cols="68">
+ Maintenance issues
 </textarea>
+<button id="respond">Respond to tenant</button>
 
 <script>
 // Create a "close" button and append it to each list item
