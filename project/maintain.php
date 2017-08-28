@@ -3,28 +3,38 @@
 <head>
 <meta charset="utf-8">
 <title>Maintanance</title>
-<script type="text/javascript">
-function popup(windowname)
-{
-if (!window.focus)return true;
-var href;
-if (typeof(mylink)=='string') href=mylink;
-else ;
-alert(windowname);
-return false;
-}
-</script>
+<style>
+
+#list {width:50%;
+position:absoloute;}
+
+</style>
 </head>
 <body>
  <fieldset>
+ <div id="list">
+<h2>Report your maintenance issues</h2>
 
-<div>
-<a href="maintain.php"><button onclick="window.alert('submitted to landlord')">broken windows</button></a>
-<a href="maintain.php"><button onclick="window.alert('submitted to landlord')">Leakage</button></a>
-<a href="maintain.php"><button onclick="window.alert('submitted to landlord')">Light issues<</button></a>
-<a href="landlord.php"><button>Light issues</button></a>
+<p>select or specify</p>
 
-</fieldset>
+<form action="" method='post' style="border:1px solid #ccc">
+   
+		<input type="checkbox" name="broken_window" id="broken" value="male">Broken Window <br />
+		<input type="checkbox" name="leaking_pipes" id="pipes" value="male">Leaking pipes <br />
+		<input type="checkbox" name="blockage" id="blockage" value="male">Blockage <br />
+		<input type="checkbox" name="broken_door" id="door" value="male">Dislocatted Door <br />
+		<input type="checkbox" name="broken_window" id="broken" value="male">mulfuntional air conditioner <br />
+		<input type="checkbox" name="broken_window" id="broken" value="male">Slow Elavotor <br />
+		
+<p>if other,specify<input type="text" name="specify"></p>	
+<input type="button" name="submmit" value="Send"/>
+
+</div>
+</fieldset><br />
+<textarea rows="16" id="landlord"  cols="55">
+response from the landlord
+</textarea>
+
 
 
 </body>

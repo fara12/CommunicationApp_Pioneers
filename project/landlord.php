@@ -163,7 +163,7 @@ input {
 <textarea id="maintananceIssues" rows="16" cols="68">
  Maintenance issues
 </textarea>
-<button id="respond">Respond to tenant</button>
+<button id="respond" onclick="textAreaValue()">Respond to tenant</button>
 
 <script>
 // Create a "close" button and append it to each list item
@@ -221,6 +221,14 @@ function newElement() {
     }
   }
 }
+
+function textAreaValue(){
+	var x = document.getElementById("maintananceIssues").value;
+    //document.getElementById("demo").innerHTML = x;
+	alert(x);
+	
+}
+
 </script>
 <!--<link rel="stylesheet" href="CSS/index.css" type="text/css"> -->
 
